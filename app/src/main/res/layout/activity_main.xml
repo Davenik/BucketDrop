@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/iv_logo"
-        android:layout_width="192dp"
-        android:layout_height="192dp"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="64dp"
-         />
-    <Button
-        android:id="@+id/btn_add_drop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/iv_logo"
-        android:text="@string/Str_add_drop"
-        android:textAllCaps="false"
-        android:textSize="28sp"
-        android:layout_margin="32dp"
-        android:paddingLeft="64dp"
-        android:paddingRight="64dp"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
-        />
+    android:layout_height="match_parent"
+    tools:context="projects.nik.bucketdrop.ActivityMain">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+<ImageView
+    android:layout_below="@+id/toolbar"
+    android:id="@+id/iv_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <include layout="@layout/empty_drops" />
 </RelativeLayout>

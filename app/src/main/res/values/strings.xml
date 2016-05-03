@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BucketDrop</string>
     <string name="Str_add_drop">Add a Drop</string>
+    <string name="sans_serif_thin">sans-serif-thin</string>
 </resources>

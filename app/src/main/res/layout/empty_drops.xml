@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/iv_logo_size"
+        android:layout_height="@dimen/iv_logo_size"
+        android:src="@drawable/logo_large"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/iv_layout_margin"
+         />
+    <Button
+        android:background="@drawable/bg_btn_add"
+        android:id="@+id/btn_add_drop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_logo"
+        android:text="@string/Str_add_drop"
+        android:textAllCaps="false"
+        android:onClick="showDialog"
+        android:textSize="@dimen/btn_add_it_text_size"
+        android:layout_margin="@dimen/btn_add_it_layout_margin"
+        android:paddingLeft="@dimen/btn_add_horizontal_padding"
+        android:paddingRight="@dimen/btn_add_horizontal_padding"
+        android:paddingBottom="@dimen/btn_add_vertical_padding"
+        android:paddingTop="@dimen/btn_add_vertical_padding"
+        android:fontFamily="@string/sans_serif_thin"
+        android:textColor="@color/btn_add_color"/>
+
+</RelativeLayout>
